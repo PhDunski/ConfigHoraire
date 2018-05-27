@@ -6,7 +6,7 @@
 Config::Config(int configNumber) : filename("config")
 {
     filename.append(std::to_string(configNumber))
-            .append(".cvs");
+            .append(".csv");
     am = new Planning(AM);
     pm = new Planning(PM);
     saveButton = new QPushButton(tr("Enregistrer"));
